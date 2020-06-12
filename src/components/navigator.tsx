@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function Header() {
+export default function Navigator() {
   return (
     <Wrapper>
-      <MoveMenu href="#bottom">소개</MoveMenu>
-      <MoveMenu href="#top">소개</MoveMenu>
-      <MoveMenu>소개</MoveMenu>
+      <MoveMenu href="#profile">Profile</MoveMenu>
+      <MoveMenu href="#project">Project</MoveMenu>
+      <MoveMenu href="#contact">Contact</MoveMenu>
     </Wrapper>
   );
 }

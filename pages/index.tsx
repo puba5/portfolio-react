@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 
 import Navigator from "../src/components/navigator";
 import PostCardList from "../src/components/post-card/list";
 
+import Profile from "../src/components/profile";
+import Contact from "../src/components/contact";
+import ProjectList from "../src/components/Project-form/projectList";
+
+const projectList = [
+  {
+    id: "1",
+    startedAt: "",
+    endedAt: "",
+    projectName: "",
+    imgVideoLink: "",
+    stack: "",
+    description: "",
+  },
+];
 const postList = [
   {
     id: "p1",
@@ -80,7 +95,13 @@ export default function Home() {
   return (
     <Wrapper>
       <Navigator />
+      <div id="profile" />
+      <Profile />
+      <div id="project" />
+      <ProjectList />
       <PostCardList {...{ postList }} />
+      <div id="contact" />
+      <Contact />
     </Wrapper>
   );
 }
@@ -91,4 +112,5 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #aaa;
 `;

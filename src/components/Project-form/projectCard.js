@@ -1,16 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-import Header from "./header";
-import Content from "./content";
-import Footer from "./footer";
-
-export default function PostCard({ createdAt, creator, profileImageUrl, content, likeCount }) {
+export default function ProjectCard() {
   return (
     <Wrapper>
-      <Header {...{ createdAt, creator, profileImageUrl }} />
-      <Content {...content} />
-      <Footer {...{ likeCount }} />
+      <div>프로젝트 이름</div>
+      <div>프로젝트 사진</div>
+      <div>프로젝트 설명</div>
     </Wrapper>
   );
 }

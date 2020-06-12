@@ -46,7 +46,7 @@ body {
   padding: 0;
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 0.1rem;
-  background-color:#ccc;
+  background-color:#aaa;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -93,7 +93,7 @@ const Wrapper = styled.div`
 
 const Grey = styled.div`
   flex: 1;
-  background-color: #ccc;
+  background-color: #aaa;
   z-index: 100;
 `;
 

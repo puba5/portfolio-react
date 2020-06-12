@@ -1,19 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-import PostCard from "./index";
+import ProjectCard from "./projectCard";
 
-export default function PostCardList({ postList }) {
-  //const absoluteTop = window.pageYOffset + element.getBoundingClientRect().top;
-
+export default function PostCardList() {
   return (
     <Wrapper>
-      {postList.map((post, index) => (
-        <>
-          <PostCard {...post} />
-          {index !== postList.length - 1 && <Line />}
-        </>
-      ))}
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
     </Wrapper>
   );
 }
